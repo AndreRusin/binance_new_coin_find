@@ -22,6 +22,10 @@ bot.on('message', (msg) => {
             bot.sendMessage(chatId, 'Welcome!');
         }
     }
+
+    if(msg.text === 'test') {
+        bot.sendMessage(chatId, 'Работаем!');
+    }
 });
 
 async function checkWallet() {
