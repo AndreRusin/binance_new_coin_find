@@ -23,7 +23,7 @@ bot.on('message', (msg) => {
         }
     }
 
-    if(msg.text === 'test') {
+    if(msg.text === 'test' || msg.text === '/test') {
         bot.sendMessage(chatId, 'Работаем!');
     }
 });
