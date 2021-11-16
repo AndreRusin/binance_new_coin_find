@@ -37,8 +37,6 @@ async function checkWallet() {
     if (!allBinanceWallets.length) {
         allBinanceWallets = data;
     } else {
-        console.log('Checking new wallets....');
-
         // Find new wallets
         const results = data.filter(({ coin: coin1 }) => !allBinanceWallets.some(({ coin: coin2 }) => coin2 === coin1));
 
@@ -56,8 +54,8 @@ async function checkWallet() {
             })
 
             allBinanceWallets = data;
-        } else {
-            console.log('No new wallets found.');
+
+            console.log(message)
         }
     }
 }
