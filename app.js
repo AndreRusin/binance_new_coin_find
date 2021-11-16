@@ -55,6 +55,7 @@ async function checkWallet() {
                 bot.sendMessage(user.chatId, message);
             })
 
+            allBinanceWallets = data;
         } else {
             console.log('No new wallets found.');
         }
